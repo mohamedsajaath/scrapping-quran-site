@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<title>Tamil Quran - தமிழ் குர்ஆன் tamil Translation of Quran with arabic recitation mp3</title>
+<meta name="Keywords" content="Tamilil Quran, தமிழ் குர்ஆன் quran, kuran, quraan,tamil translation, Islamic Foundation Trust, IFT" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge;" />
+	<link rel="stylesheet" href="/css/bootstrap.css" type="text/css"/>
+	<link rel="stylesheet" href="/css/megamenu.css" type="text/css"/>
+	<link rel="stylesheet" href="/css/b_main.css?v3.0" type="text/css"/>
+    <script src="/js/jquery-2.1.4.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-17685714-2"></script>
+	<script src="/js/b_quranaudio.js?v2.0"></script>
+	<script src="/js/b_jquery.jplayer.min.js"></script>
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script><script src="https://apis.google.com/js/platform.js" async defer></script>
+	 
+	<script src="/js/b_favourite.js?v4.0"></script>
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+	  
+    <![endif]-->
+</head>
+<body>
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+<div class="container">
+<nav class="navbar navbar-default navbar-fixed-top" id="topnavbar" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+ 			<div class="logo-row">
+								 <span class="profile-logo">
+                                <a href="suraindex.php" ><img data-toggle="tooltip" title="முகப்பு" data-placement="bottom" src="img/ic_launcher2.jpg"></a>
+                            </span>
+            <!--logo end-->
+			</div>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+		<ul class="nav navbar-nav navbar-left">
+	<span class="navbar-text-q"><div class="fb-share-button" data-layout="button"></div></span>
+	</ul>
+
+	<ul class="nav navbar-nav navbar-right">
+		<li>&nbsp;</li>
+	</ul>
+
+
+	<ul class="nav navbar-nav navbar-right">
+	                    <!-- task notificatoin start -->
+			<li class="dropdown mega-user-dropdown">
+				<a href="#" id="usermenu" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                         <ul class="dropdown-menu mega-user-dropdown-menu row extended tasks-bar">
+					    							<form class="form" id="login" name="login" action="login.php" method="POST">
+							<div class="input-group has-success">
+							  <input type="text" class="form-control" name="userid" id="userid" value=""  autocomplete="off" placeholder="User ID" required>
+							  <input type="hidden" value="qurandisp.php" name="source" id="source">
+							  <span class="input-group-btn">
+								<button type="submit" class="btn btn-success" type="button">Sign-In</button>
+							  </span>
+							</div>
+							 
+							</form>
+							
+						<div class="desc">Not Registered  ? </div>
+						<li>
+                               <p class="blue"> <a href="register.php"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Register Here</a> </p>
+                        </li>
+
+						
+						</ul>
+                    </li>
+	</ul>
+	<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown mega-search-dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+				
+				<ul class="dropdown-menu mega-search-dropdown-menu row">
+
+					<li class="col-sm-0">
+						<ul>
+						<li class="dropdown-header">Quick Search</li> 
+							<form class="form" id="qredirect" name="qredirect" action="javascript:quranredirect();">
+							<div class="form-group has-success">
+							  <input type="number" placeholder="ஸூரா" class="form-control" name="ssurano" id="ssurano" value="" min="1" max="114" required>
+							  <input type="number" placeholder="வசனம்" class="form-control" name="ayahno" id="ayahno" value="" min="1" max="286">
+							<button type="submit" class="btn btn-success">Go</button>
+
+							  </div>
+							</form>
+							<li class="divider"></li>
+							<form class="form" id="hredirect" name="hredirect" action="javascript:historyredirect();">
+							<div class="input-group has-success">
+							  <input type="number" class="form-control" placeholder="வரலாறு பக்கம்" name="histpageno" id="histpageno" value="" min="1" max="546" required>
+							  <span class="input-group-btn">
+								<button type="submit" class="btn btn-success" type="button">Go</button>
+							  </span>
+							</div>
+							</form>
+							<li class="divider"></li>
+				 <li class="dropdown-header">தேடுங்கள்</li>
+							  <form class="form" name="mform" action="javascript:msearch();">
+						 <div class="form-group has-success">
+						  <div class="checkbox"><label><input id="msearchtype" name="msearchtype" type="checkbox" value="">Search Exact Phrase</label></div>
+						  <select id="mtransselect" name="mtransselect" class="form-control" onchange="onChangeMSearch()">
+
+															<option value="0" >டாக்டர். முஹம்மது ஜான்</option>
+															<option value="1" >அப்துல் ஹமீது பாகவி</option>
+															<option value="2" >இஸ்லாமிய நிறுவனம் டிரஸ்ட்</option>
+															<option value="3" >மன்னர் ஃபஹத் வளாகம் (சவூதி)</option>
+															<option value="11" >Saheeh International</option>
+															<option value="40" >குர்ஆன்</option>
+															<option value="20" >புலுகுல் மராம் ஹதீஸ்</option>
+															<option value="30" >முஹம்மது (ஸல்) வரலாறு</option>
+														
+
+						  </select>
+
+						  <input type="text" autocomplete="off" class="form-control" placeholder="தேடவேண்டிய சொல்" name="q" id="q" required>
+						  <button type="submit" class="btn btn-success" type="button">தேடுக</button>
+						</div><!-- /input-group -->
+							  </form>
+						</ul>
+					</li>
+				</ul>
+				
+			</li>
+
+
+	</ul>
+	<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown mega-settings-dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+				
+				<ul class="dropdown-menu mega-settings-dropdown-menu row">
+
+					<li class="col-sm-0">
+						<ul>
+						 
+						  <li class="dropdown-header">காண்பி :</li> 
+							<form class="form">
+							
+								 <div class="form-group">
+								
+									<label class="checkbox-inline">
+									<input type="checkbox" onclick="javascript:Trans();" id="transchkbox" checked="checked"> தமிழ்
+									</label>
+									<label class="checkbox-inline">
+									  <input type="checkbox" onclick="javascript:Arabic();" id="achkbox" checked="checked"> அரபி
+									</label>
+
+
+									<label class="checkbox-inline">
+									  <input type="checkbox" onclick="javascript:wordbyword();" id="wordchkbox" checked="checked"> சொல்லுக்கு சொல்
+									</label>
+									<label class="checkbox-inline">
+										<input type="checkbox" onclick="javascript:Autoscroll();" id="autoscrollchckbox" checked="checked"> Auto scroll while Playing</label>
+									</div><!-- /input-group -->
+							</form>
+							
+
+						</ul>
+						<ul>
+						<li class="divider"></li>
+							<form class="form">
+								<div class="form-group">
+									<li class="dropdown-header">தமிழாக்கம்:</li>
+												<select id="transselect" onchange="settrans();" class="form-control-q">
+												<option value="0">டாக்டர். முஹம்மது ஜான்</option>
+												<option value="1">அப்துல் ஹமீது பாகவி</option>
+												<option value="2">இஸ்லாமிய நிறுவனம் டிரஸ்ட்</option>
+												<option value="3">மன்னர் ஃபஹத் வளாகம் (சவூதி)</option>
+												<option value="11">Saheeh International</option>
+												</select>
+
+
+
+							</div>
+							</form>
+						</ul>
+						<li class="divider"></li>
+							<form class="form">
+								<div class="form-group">
+									<li class="dropdown-header">சொல்லுக்கு சொல்:</li>
+												<select id="wbwtype" onchange="setWbwType();" class="form-control-q">
+												<option value="0">தமிழ்</option>
+												<option value="1">ஆங்கிலம் (English)</option>
+												</select>
+
+
+
+							</div>
+							</form>
+						</ul>
+
+					</li>
+				</ul>
+			</li>
+	</ul>
+
+	<ul class="nav navbar-nav navbar-right">
+		<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+	<div class="jp-type-single">
+		<div class="jp-gui jp-interface">
+			<div class="jp-controls-holder">
+				<div class="jp-controls">
+				<p class="navbar-text">
+					<button data-toggle="tooltip" title="You also can tap on Ayah to Play / Pause." data-placement="bottom" type="button" id="play" class="jp-play btn btn-default" aria-label="Play">
+					  <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+					</button> 
+					<button data-toggle="tooltip" title="You also can tap on Ayah to Play / Pause." data-placement="bottom" type="button" id="pause" class="jp-pause btn btn-default" aria-label="Pause">
+					  <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+					</button> 
+
+					<button data-toggle="tooltip" title="You also can tap on Ayah to Play / Pause." data-placement="bottom" type="button" id="stop" class="jp-stop btn btn-default" aria-label="Stop">
+					  <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+					</button> 
+				</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		</ul>
+	<ul class="nav navbar-nav navbar-right">
+           <form class="navbar-form">
+     <div class="input-group">
+										<p class="navbar-text"><span class="glyphicon glyphicon-music" aria-hidden="true"></span></p>
+ 												<select id="reciter" onchange="setbase();" class="form-control-q">
+												<option value="Abdurrahmaan_As-Sudais_64kbps">Abdurrahmaan As-Sudais</option>
+												<option value="Abdul_Basit_Mujawwad_128kbps">Abdul Basit (Mujawwad)</option>
+												<option value="Abdul_Basit_Murattal_64kbps">Abdul Basit (Murattal)</option>
+												<option value="Abdullah_Basfar_64kbps">Abdullah Basfar</option>
+												<option value="Abu_Bakr_Ash-Shaatree_64kbps">Abu Bakr Ash-Shaatree</option>
+												<option value="Ahmed_ibn_Ali_al-Ajamy_64kbps_QuranExplorer.Com">Ahmed ibn Ali al-Ajamy</option>
+												<option value="Alafasy_64kbps">Alafasy</option>
+												<option value="Ghamadi_40kbps">Ghamadi</option>
+												<option value="Hani_Rifai_64kbps">Hani Rifai</option>
+												<option value="Hudhaify_64kbps">Hudhaify</option>
+												<option value="Husary_64kbps">Husary</option>
+												<option value="Husary_Mujawwad_64kbps">Husary (Mujawwad)</option>
+												<option value="Maher_AlMuaiqly_64kbps">Maher AlMuaiqly</option>
+												<option value="Minshawy_Mujawwad_64kbps">Minshawy (Mujawwad)</option>
+												<option value="Minshawy_Murattal_128kbps">Minshawy (Murattal)</option>
+												<option value="Mohammad_al_Tablaway_64kbps">Mohammad al_Tablaway</option>
+												<option value="Muhammad_Jibreel_64kbps">Muhammad Jibreel</option>
+												<option value="Saood bin Ibraaheem Ash-Shuraym_128kbps">Saood bin Ibraaheem</option>
+												</select>
+
+					    </div><!-- /input-group -->
+	
+          </form>
+		</ul>
+
+	<ul class="nav navbar-nav navbar-right">
+	<li><a href="qurandispcmp.php?start=99" data-toggle="tooltip" title="தமிழாக்கத்தை ஒப்பிடுங்கள்" data-placement="bottom"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> ஒப்பிடுங்கள்</a></li>	</ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+<div class="container-fluid">
+<div id="surano" class="099"></div><div id="endayah" class="8"></div><script type="text/javascript">document.title = 'Tamil Quran - தமிழ் குர்ஆன் - ஸூரத்துஜ் ஜில்ஜால்(அதிர்ச்சி)';</script><div class="row"><div class="col-md-3"></div><div class="col-md-6"><div class="alert alert-info" role="alert"><b>டாக்டர். முஹம்மது ஜான் தமிழாக்கம்</b></div></div><div class="col-md-3"></div></div><div class="surahead"><span class="suratitle">99. ஸூரத்துஜ் ஜில்ஜால்(அதிர்ச்சி)<br>மக்கீ, வசனங்கள்: 8</span><br><span class="bismi">அளவற்ற அருளாளனும், நிகரற்ற அன்புடையோனுமாகிய அல்லாஹ்வின் திருப்பெயரால்(துவங்குகிறேன்)</span></div><div class="bismi_arabic" id="bi">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</div><div class="row combined"><div class="actionicons"><span class="qplay" id="a001"><span id="z001" class="playicon glyphicon glyphicon-play" aria-hidden="true">Play </span></span><span class="qcopy" id="c001"><span id="yy001" class="playicon glyphicon glyphicon-copy" aria-hidden="true">Copy</span></span><span class="ajword" id="asquran001"><span id="atquran001" class="playicon glyphicon glyphicon-collapse-down" aria-hidden="true">WordByWord</span></span><span class="dayaNum"><a class="nayaNum" name='99:1'>99:1</a></span></div><div class="quran" id="s001"><span class="ayaNum" id="n001">99:1 </span><span id="k001"> اِذَا زُلْزِلَتِ الْاَرْضُ زِلْزَالَهَا ۙ‏</span></div><div class="quranword" id="ajquran001"> <span class="transarabicword"><span class="arabicword">اِذَا زُلْزِلَتِ</span> <span class="transword">நடுங்க வைக்கப்படும் போது</span></span> <span class="transarabicword"><span class="arabicword">الْاَرْضُ</span> <span class="transword">பூமி</span></span> <span class="transarabicword"><span class="arabicword">زِلْزَالَهَا ۙ‏</span> <span class="transword">அதன் நிலநடுக்கத்தால்</span></span></div><div class="trans" id="trans"><span class="ayaNum">99:1.</span> <span id="t001">பூமி பெரும் அதிர்ச்சியாக - அதிர்ச்சி அடையும் போது-</span></div></div><div class="row combined"><div class="actionicons"><span class="qplay" id="a002"><span id="z002" class="playicon glyphicon glyphicon-play" aria-hidden="true">Play </span></span><span class="qcopy" id="c002"><span id="yy002" class="playicon glyphicon glyphicon-copy" aria-hidden="true">Copy</span></span><span class="ajword" id="asquran002"><span id="atquran002" class="playicon glyphicon glyphicon-collapse-down" aria-hidden="true">WordByWord</span></span><span class="dayaNum"><a class="nayaNum" name='99:2'>99:2</a></span></div><div class="quran" id="s002"><span class="ayaNum" id="n002">99:2 </span><span id="k002"> وَاَخْرَجَتِ الْاَرْضُ اَثْقَالَهَا ۙ‏</span></div><div class="quranword" id="ajquran002"> <span class="transarabicword"><span class="arabicword">وَاَخْرَجَتِ</span> <span class="transword">இன்னும் எறிந்துவிடும்</span></span> <span class="transarabicword"><span class="arabicword">الْاَرْضُ</span> <span class="transword">பூமி</span></span> <span class="transarabicword"><span class="arabicword">اَثْقَالَهَا ۙ‏</span> <span class="transword">அதன் சுமைகளை</span></span></div><div class="trans" id="trans"><span class="ayaNum">99:2.</span> <span id="t002">இன்னும், பூமி தன் சுமைகளை வெளிப்படுத்தும் போது-</span></div></div><div class="row combined"><div class="actionicons"><span class="qplay" id="a003"><span id="z003" class="playicon glyphicon glyphicon-play" aria-hidden="true">Play </span></span><span class="qcopy" id="c003"><span id="yy003" class="playicon glyphicon glyphicon-copy" aria-hidden="true">Copy</span></span><span class="ajword" id="asquran003"><span id="atquran003" class="playicon glyphicon glyphicon-collapse-down" aria-hidden="true">WordByWord</span></span><span class="dayaNum"><a class="nayaNum" name='99:3'>99:3</a></span></div><div class="quran" id="s003"><span class="ayaNum" id="n003">99:3 </span><span id="k003"> وَقَالَ الْاِنْسَانُ مَا لَهَا‌ ۚ‏</span></div><div class="quranword" id="ajquran003"> <span class="transarabicword"><span class="arabicword">وَقَالَ</span> <span class="transword">இன்னும் கூறுவான்</span></span> <span class="transarabicword"><span class="arabicword">الْاِنْسَانُ</span> <span class="transword">மனிதன்</span></span> <span class="transarabicword"><span class="arabicword">مَا لَهَا‌ ۚ‏</span> <span class="transword">இதற்கென்ன</span></span></div><div class="trans" id="trans"><span class="ayaNum">99:3.</span> <span id="t003">“அதற்கு என்ன நேர்ந்தது?” என்று மனிதன் கேட்கும் போது-</span></div></div><div class="row combined"><div class="actionicons"><span class="qplay" id="a004"><span id="z004" class="playicon glyphicon glyphicon-play" aria-hidden="true">Play </span></span><span class="qcopy" id="c004"><span id="yy004" class="playicon glyphicon glyphicon-copy" aria-hidden="true">Copy</span></span><span class="ajword" id="asquran004"><span id="atquran004" class="playicon glyphicon glyphicon-collapse-down" aria-hidden="true">WordByWord</span></span><span class="dayaNum"><a class="nayaNum" name='99:4'>99:4</a></span></div><div class="quran" id="s004"><span class="ayaNum" id="n004">99:4 </span><span id="k004"> يَوْمَٮِٕذٍ تُحَدِّثُ اَخْبَارَهَا ۙ‏</span></div><div class="quranword" id="ajquran004"> <span class="transarabicword"><span class="arabicword">يَوْمَٮِٕذٍ</span> <span class="transword">அந்நாளில்</span></span> <span class="transarabicword"><span class="arabicword">تُحَدِّثُ</span> <span class="transword">அறிவிக்கும்</span></span> <span class="transarabicword"><span class="arabicword">اَخْبَارَهَا ۙ‏</span> <span class="transword">அது தன் செய்திகளை</span></span></div><div class="trans" id="trans"><span class="ayaNum">99:4.</span> <span id="t004">அந்நாளில், அது தன் செய்திகளை அறிவிக்கும்.</span></div></div><div class="row combined"><div class="actionicons"><span class="qplay" id="a005"><span id="z005" class="playicon glyphicon glyphicon-play" aria-hidden="true">Play </span></span><span class="qcopy" id="c005"><span id="yy005" class="playicon glyphicon glyphicon-copy" aria-hidden="true">Copy</span></span><span class="ajword" id="asquran005"><span id="atquran005" class="playicon glyphicon glyphicon-collapse-down" aria-hidden="true">WordByWord</span></span><span class="dayaNum"><a class="nayaNum" name='99:5'>99:5</a></span></div><div class="quran" id="s005"><span class="ayaNum" id="n005">99:5 </span><span id="k005"> بِاَنَّ رَبَّكَ اَوْحٰى لَهَا ؕ‏</span></div><div class="quranword" id="ajquran005"> <span class="transarabicword"><span class="arabicword">بِاَنَّ</span> <span class="transword">அதாவது நிச்சயமாக</span></span> <span class="transarabicword"><span class="arabicword">رَبَّكَ</span> <span class="transword">உம் இறைவன்</span></span> <span class="transarabicword"><span class="arabicword">اَوْحٰى لَهَا ؕ‏</span> <span class="transword">தனக்கு கட்டளையிட்டான்</span></span></div><div class="trans" id="trans"><span class="ayaNum">99:5.</span> <span id="t005">(அவ்வாறு அறிவிக்குமாறு) உம்முடைய இறைவன் அதற்கு வஹீ மூலம் அறிவித்ததனால்.</span></div></div><div class="row combined"><div class="actionicons"><span class="qplay" id="a006"><span id="z006" class="playicon glyphicon glyphicon-play" aria-hidden="true">Play </span></span><span class="qcopy" id="c006"><span id="yy006" class="playicon glyphicon glyphicon-copy" aria-hidden="true">Copy</span></span><span class="ajword" id="asquran006"><span id="atquran006" class="playicon glyphicon glyphicon-collapse-down" aria-hidden="true">WordByWord</span></span><span class="dayaNum"><a class="nayaNum" name='99:6'>99:6</a></span></div><div class="quran" id="s006"><span class="ayaNum" id="n006">99:6 </span><span id="k006"> يَوْمَٮِٕذٍ يَّصْدُرُ النَّاسُ اَشْتَاتًا  ۙ لِّيُرَوْا اَعْمَالَهُمْؕ‏</span></div><div class="quranword" id="ajquran006"> <span class="transarabicword"><span class="arabicword">يَوْمَٮِٕذٍ</span> <span class="transword">அந்நாளில்</span></span> <span class="transarabicword"><span class="arabicword">يَّصْدُرُ</span> <span class="transword">புறப்படுவார்கள்</span></span> <span class="transarabicword"><span class="arabicword">النَّاسُ</span> <span class="transword">மக்கள்</span></span> <span class="transarabicword"><span class="arabicword">اَشْتَاتًا  ۙ</span> <span class="transword">பலபிரிவுகளாக</span></span> <span class="transarabicword"><span class="arabicword">لِّيُرَوْا</span> <span class="transword">அவர்கள் காண்பதற்காக</span></span> <span class="transarabicword"><span class="arabicword">اَعْمَالَهُمْؕ‏</span> <span class="transword">அவர்களின் செயல்களை</span></span></div><div class="trans" id="trans"><span class="ayaNum">99:6.</span> <span id="t006">அந்நாளில், மக்கள் தங்கள் வினைகள் காண்பிக்கப்படும் பொருட்டு, பல பிரிவினர்களாகப் பிரிந்து வருவார்கள்.</span></div></div><div class="row combined"><div class="actionicons"><span class="qplay" id="a007"><span id="z007" class="playicon glyphicon glyphicon-play" aria-hidden="true">Play </span></span><span class="qcopy" id="c007"><span id="yy007" class="playicon glyphicon glyphicon-copy" aria-hidden="true">Copy</span></span><span class="ajword" id="asquran007"><span id="atquran007" class="playicon glyphicon glyphicon-collapse-down" aria-hidden="true">WordByWord</span></span><span class="dayaNum"><a class="nayaNum" name='99:7'>99:7</a></span></div><div class="quran" id="s007"><span class="ayaNum" id="n007">99:7 </span><span id="k007"> فَمَنْ يَّعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَّرَهٗ ؕ‏</span></div><div class="quranword" id="ajquran007"> <span class="transarabicword"><span class="arabicword">فَمَنْ</span> <span class="transword">ஆகவே, யார்</span></span> <span class="transarabicword"><span class="arabicword">يَّعْمَلْ</span> <span class="transword">செய்வாரோ</span></span> <span class="transarabicword"><span class="arabicword">مِثْقَالَ</span> <span class="transword">அளவு</span></span> <span class="transarabicword"><span class="arabicword">ذَرَّةٍ</span> <span class="transword">ஓர் அணு</span></span> <span class="transarabicword"><span class="arabicword">خَيْرًا</span> <span class="transword">நன்மை</span></span> <span class="transarabicword"><span class="arabicword">يَّرَهٗ ؕ‏</span> <span class="transword">அதைப் பார்ப்பார்</span></span></div><div class="trans" id="trans"><span class="ayaNum">99:7.</span> <span id="t007">எனவே, எவர் ஓர் அணுவளவு நன்மை செய்திருந்தாலும் அத(ற்குரிய பல)னை அவர் கண்டு கொள்வார்.</span></div></div><div class="row combined"><div class="actionicons"><span class="qplay" id="a008"><span id="z008" class="playicon glyphicon glyphicon-play" aria-hidden="true">Play </span></span><span class="qcopy" id="c008"><span id="yy008" class="playicon glyphicon glyphicon-copy" aria-hidden="true">Copy</span></span><span class="ajword" id="asquran008"><span id="atquran008" class="playicon glyphicon glyphicon-collapse-down" aria-hidden="true">WordByWord</span></span><span class="dayaNum"><a class="nayaNum" name='99:8'>99:8</a></span></div><div class="quran" id="s008"><span class="ayaNum" id="n008">99:8 </span><span id="k008"> وَمَنْ يَّعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَّرَهٗ<span class="sign"></span>‏</span></div><div class="quranword" id="ajquran008"> <span class="transarabicword"><span class="arabicword">وَمَنْ</span> <span class="transword">இன்னும் யார்</span></span> <span class="transarabicword"><span class="arabicword">يَّعْمَلْ</span> <span class="transword">செய்வாரோ</span></span> <span class="transarabicword"><span class="arabicword">مِثْقَالَ</span> <span class="transword">அளவு</span></span> <span class="transarabicword"><span class="arabicword">ذَرَّةٍ</span> <span class="transword">ஓர் அணு</span></span> <span class="transarabicword"><span class="arabicword">شَرًّا</span> <span class="transword">தீமை</span></span> <span class="transarabicword"><span class="arabicword">يَّرَهٗ‏</span> <span class="transword">அதைப் பார்ப்பார்</span></span></div><div class="trans" id="trans"><span class="ayaNum">99:8.</span> <span id="t008">அன்றியும், எவன் ஓர் அணுவளவு தீமை செய்திருந்தாலும், அ(தற்குரிய பல)னையும் அவன் கண்டு கொள்வான்.</span></div></div>
+<script language="javascript">
+initial();
+document.body.style.display = "block";
+</script>
+</div>
+<footer class="footer"> 
+      <div class="container">
+         <ul class="pager">
+    <li class="previous"><a href="qurandisp.php?start=98"><span aria-hidden="true">&larr;</span> ஸூரா 98</a></li>    <li class="next"><a href="qurandisp.php?start=100" >ஸூரா 100 <span aria-hidden="true">&rarr;</span></a></li>  </ul>
+      </div>
+</footer>
+<script src="/js/b_favourite_bottom.js"></script>
+</body>
+
+</html>
